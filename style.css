@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+    
+}
+
+
+:root{
+    --navfc:#777777;
+    --navfchover:#C7C7C7;
+}
+
+
+li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.dis_fc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dis_f{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+/* header sec start */
+
+.header{
+    width: 100%;
+    height:15vh;
+}
+
+
+.container{
+    width: 70%;
+    /* border: 5px solid red; */
+}
+
+
+.sec_1{
+    justify-content: space-between;
+}
+
+.logopart {
+    cursor: pointer;
+}
+.logopart img{
+    height: 30px;
+    width: 30px;
+}
+
+.logopart h1{
+    font:bold 0.8em  'Montserrat', sans-serif;
+    color: #000;
+    margin-left: 4px;
+
+}
+
+
+.navpart ul {
+    justify-content: flex-end;
+}
+
+.navpart ul li a{
+    padding: 5px 8px;
+    font:  500 1em 'Montserrat', sans-serif;
+    color: var(--navfc),white;
+    transition: 0.3s ;
+}
+
+.navpart ul li a:hover{
+    color: var(--navfchover) ;
+}
+
+/* header sec end */
+
+/* banner section start */
+
+.banner{
+    width: 100%;
+    height: 535px;
+    background-image:
+     url(img/bg-1.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+    text-align: center;
+}
+
+
+.banner .sec_2 h1{
+    font: 700 3em/1.5em 'Montserrat', sans-serif;
+    color: azure;
+    margin: 20px 0;
+}
+
+
+.banner .sec_2 p{
+    font: 400 1.5em/1.5rem 'Montserrat', sans-serif;
+    color: whitesmoke;  
+    text-transform: capitalize;  
+}
+.banner .sec_2 a{
+    font: 700 0.9em 'Montserrat', sans-serif;
+    color: white;
+    width: 200px;
+    height: 50px;
+    padding: 15px 0;
+    border-radius: 20px;
+    margin: 40px 0;
+    background-color: #7fff00c4;
+    text-align: center;
+    transition: 0.4s;
+}
+.banner .sec_2 a:hover{
+    transform: scale(0.9);
+    /* color: #fcfcfc; */
+}
+
+/* banner section end */
+
+/* about section start */
+
+.about{
+    width: 100%;
+    height: 650px;
+}
+.about .sec_3 .title{
+    margin: 50px 0;
+    text-align: center;
+}
+
+.about .sec_3 .title h1{
+    font: 700 1.9em/1.5rem 'Montserrat', sans-serif;    
+    margin: 20px;
+}
+
+.about .sec_3 .title p{
+    font: 500 1em/1.5rem 'Montserrat', sans-serif;    
+    margin: 20px;
+}
+
+.about .sec_3 .card .carditem:hover{
+    transform: scale(0.9);
+}
+.about .sec_3 .card .carditem{
+    width: 30%;
+    text-align: center;
+    margin: 0 10px;
+    border: 3px solid #100101;
+    transition: 0.5s;
+}
+
+.about .sec_3 .card .carditem img{
+
+    margin-bottom:20px ;
+    margin-top: 5px
+;
+}
+
+.about .sec_3 .card .carditem h2{
+    margin: 20px 0;
+    font: 800 1em/1.5rem 'Montserrat', sans-serif;    
+}
+
+.about .sec_3 .card .carditem p{
+    margin: 20px 0;
+    font: 800 1em/1.5rem 'Montserrat', sans-serif; 
+    text-transform: capitalize;   
+}
+/* banner section end */
+
+/* ablog start */
+
+.blog{
+    width: 100%;
+    height: 535px;
+    background: url(img/ag_2.jpg) no-repeat ;
+    background-size: cover;
+}
+.sec_4 .parent{
+    justify-content: flex-start;
+margin-left: 10em;
+}
+.sec_4 .parent h1 {
+    font: 700 3em'Montserrat', sans-serif;
+    color: azure;
+    margin: 20px  0;    
+}
+
+.sec_4 .parent h1 span{
+    color: chartreuse;
+}
+
+.sec_4 .parent p{
+    font: 500 1em/1.8 'Montserrat', sans-serif;
+    color: azure;
+    text-transform: capitalize;
+}
+
+.sec_4 .parent .item .items{
+    justify-content: flex-start;
+    margin: 15px 0;
+}
+.sec_4 .parent .item .items p{
+    margin:0 10px 0;
+}
+
+
+.sec_4 .parent  a{
+    font: 700 0.9em 'Montserrat', sans-serif;
+    color: white;
+    width: 200px;
+    height: 50px;
+    padding: 15px 0;
+    border-radius: 20px;
+    margin: 40px 0;
+    background-color: #7fff00c4;
+    text-align: center;
+    transition: 0.4s;
+
+}
+
+.sec_4 .parent  a:hover{
+    transform: scale(0.9);
+}
+/* ablog end */
+/* portfolio start */
+
+.portfolio{
+    width: 100%;
+    height: 825px;
+    background-image: url(img/element.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.portfolio .heading h1{
+    font: 700 2em'Montserrat', sans-serif;
+    color: black;
+    margin: 15px  0;      
+}
+
+.portfolio .heading p{
+    font: 500 0.9em'Montserrat', sans-serif;
+    color: var(--navfc);
+}
+.portfolio .main{
+    margin-top: 50px;
+}
+.portfolio .main h3{
+    font: 700 1.5em'Montserrat', sans-serif;
+    color: black;
+    margin-bottom: 10px;
+}
+.portfolio .main > p{
+    font: 500 0.9em'Montserrat', sans-serif;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 470px;
+}
+.portfolio .main .contain{
+    margin: 20px 0;
+} 
+
+.portfolio .main .contain .items{
+     margin: 20px 0;
+     display: flex;
+}
+
+.portfolio .main .contain .items .text{
+  align-self: center;
+}
+
+.portfolio .sec_5 .main .contain img{
+margin-right:10px
+}
+
+.portfolio .main .contain .items .text h4{
+    font: 800 1em'Montserrat', sans-serif;
+    color: black;
+
+}
+.portfolio .main .contain .items .text p{
+    font: 400 0.8em'Montserrat', sans-serif;
+    color: black;
+
+}
+.portfolio .sec_5 a{
+    font: 800 1em/2rem 'Montserrat', sans-serif;
+    color:green;
+    text-align: center;
+
+}
+
+
+/* portfolio end */
+
+/* Port2 start */
+.port_1{
+    width: 100%;
+    height: 560px;
+    background-color: rgb(249, 249, 249);
+}
+
+.port_1 .sec_6 .title{
+    margin-bottom: 90px ;
+}
+.port_1 .sec_6 .title h1{
+    font: 700 2em'Montserrat', sans-serif;
+    color: black;
+    margin-bottom: 5px;
+}
+.port_1 .sec_6 .title p{
+    font: 500 1em'Montserrat', sans-serif;
+    color: black;
+}
+
+.port_1 .sec_6 .card .carditem{
+    width: 30%;
+    text-align: center;
+    margin: 0 20px;
+    position: relative;
+}
+
+.port_1 .sec_6 .card .carditem img{
+
+    margin-bottom:20px ;
+    margin-top: 5px;
+}
+
+/* .port_1 .sec_6 .card .carditem::after{
+    content:'';
+    width: 200px;
+    height: 3px;
+    background-color: darkgray;
+    position: absolute;
+    top: 50px;
+    right: -120px;
+} */
+
+/* .port_1 .sec_6 .card .carditem:last-child:after{
+    content: none;
+} */
+
+.port_1 .sec_6 .card .carditem h2{
+    margin: 20px 0;
+    font: 800 1em/1.5rem 'Montserrat', sans-serif;    
+}
+
+.port_1 .sec_6 .card .carditem p{
+    margin: 20px 0;
+    font: 500 1em/1.5rem 'Montserrat', sans-serif; 
+    text-transform: capitalize;   
+}
+/* port2 end */
+/* comment start */
+
+.review{
+    width: 100%;
+    height: 815px;
+}
+
+.review .sec_6 .heading h1{
+    font: 800 2em/1.5rem 'Montserrat', sans-serif; 
+    color: black;
+    margin-bottom: 10px;
+}
+.review .sec_6 .heading p{
+    font: 500 1em/1.5rem 'Montserrat', sans-serif; 
+    color: black;
+
+}
+
+.review .sec_6 .com_container{
+    margin: 20px 0;
+}
+.review .sec_6 .com_container .com_contain{
+    margin: 80px 0;
+}
+
+
+.review .sec_6 .com_container .com_contain  img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: none;
+    margin-right: 60px;
+}
+
+.review .sec_6 .com_container .com_contain  .img2{
+    order: 2;
+    margin-left:60px ;
+}
+
+.review .sec_6 .com_container .com_contain .tt1,
+.review .sec_6 .com_container .com_contain .tt2 {
+    width: 630px;
+    height: 130px;
+    background-color: #d8d7d7a4;
+    border-radius: 10px;
+    position: relative;
+}
+
+.review .sec_6 .com_container .com_contain div .comment{
+    font: 700 1em/1.5rem 'Montserrat', sans-serif; 
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+.review .sec_6 .com_container .com_contain div .name{
+    font: 700 0.8em/1.5rem 'Montserrat', sans-serif; 
+    color: green;
+    text-align: center;
+
+}
+
+.review .sec_6 .com_container .com_contain .tt1 .tooltip::after{
+    content: "";
+    position: absolute;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent #d8d7d7a4 transparent transparent;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+}
+
+.review .sec_6 .com_container .com_contain .tt2 .tooltip::after{
+    content: "";
+    position: absolute;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent  transparent transparent #d8d7d7a4;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+}
+
+
+/* comment end */
+
+/* contact start */
+.contact{
+    width: 100%;
+    height: 200px;
+    background-color: #5db406f3;
+}
+.contact .sec_8 h1{
+    font: 800 2em/1.5rem 'Montserrat', sans-serif; 
+    color: white;
+    margin-bottom: 40px;
+}
+.contact .sec_8 a{
+    font: 800 1.4em/1.5rem 'Montserrat', sans-serif; 
+    color: white;
+    border: 3px solid white;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+
+
+
+/* contact end */
+
+/* clientlogo start */
+
+.clientlogo{
+    width: 100%;
+    height: 165px;
+}
+.clientlogo .sec_9{
+    justify-content: space-between;
+}
+/* clientlogo end */
+/* footer start */
+
+.footer{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+}
+
+.footer .sec_10{
+    justify-content: space-around;
+
+}
+.footer .sec_10 .itemcontainer{
+    width: 30%;
+    height:300px ;
+}
+
+.footer .sec_10 .itemcontainer h1{
+    font: 800 2em/1.5rem 'Montserrat', sans-serif; 
+    color: white;
+    margin-bottom: 40px;
+}
+
+.footer .sec_10 .itemcontainer .menu{
+    justify-content: flex-start;
+    align-items: center;
+    font: 800 1.1em/1.5rem 'Montserrat', sans-serif; 
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer .sec_10 .itemcontainer .menu img{
+    margin-right: 10px;
+}
+
+
+/* footer end */
+/* lastsection start */
+
+.footerend{
+    width: 100%;
+    height: 100px;
+}
+
+.footerend div{
+    justify-content: space-between;
+}
+
+.footerend div p{
+    font: 800 1.1em/1.5rem 'Montserrat', sans-serif; 
+    color: black;
+}
+.footerend div .flogo{
+    justify-content: space-between;
+    width: 23%;
+}
+/* lastsection end */
+
+/* css rule finish static */
+
+
+
+
+
+
+/* responsive design start */
+
+/* media for laptop medium devive width 1024px */
+
+
+/* 
+only changing container width 70% to 85% & portfolio section's bg-image size
+
+*/
+
+@media only screen and (max-width:1024px){
+    .container{
+        width:85%
+    }
+    .portfolio{
+        background-size: 390px;
+    }
+}
+
+
+
+
+/* starting design for tablet device max width 768px */
+
+/* changing font size, widths , flex-wrap, and many things  */
+
+@media only screen and (max-width:768px){
+
+    .container{
+        width: 90%;
+    }
+    /* section 1 */
+    .navpart ul li a{
+        font-size: 0.8em;
+    }
+    /* section 2 */
+    .banner .sec_2 h1{
+        font-size: 2.5em;
+        margin: 10px 0;
+    }
+
+    .banner .sec_2 p{
+        font-size: 1.2em;
+    }
+    /* section 03 */
+    .about{
+        height: 750px;
+    }
+
+    .about .sec_3 .title{
+        margin: 20px 0;
+    }
+
+    .about .sec_3 .title h1{
+        font-size: 1.4em;
+        margin: 12px 0;
+    }
+    .about .sec_3 .title p{
+        font-size: 0.9em;
+        margin: 8px 0;
+    }
+    .about .sec_3 .card{
+        flex-wrap: wrap;
+    }
+    .about .sec_3 .card .carditem{
+        width: 45%;
+        margin: 10px 10px;
+        border: 2px solid black;
+    }
+
+    /* sec04 */
+
+    .sec_4 .parent h1{
+        font-size: 2.2em;
+    }
+
+    .sec_4 .parent p{
+        font-size: 0.9em;
+        font-weight: 600;
+    }
+    /* sec5 */
+
+    .portfolio{
+        background-size: 250px;
+        background-position: right;
+    }
+
+    /* sec6 */
+    .port_1 .sec_6 .title{
+        margin-bottom: 30px;
+    }
+    .port_1 .sec_6 .card{
+        flex-wrap: nowrap;
+    }
+    .port_1 .sec_6 .card .carditem{
+        margin: 0 10px;
+    }
+
+    /* sec 8 */
+    .contact .sec_8 h1{
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    /* sec 09 */
+
+    .clientlogo .sec_9 img{
+        width: 20%;
+    }
+    /* section 10 */
+
+    .footer .sec_10 .itemcontainer h1{
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    .footer .sec_10 .itemcontainer .menu{
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+
+    /* lastsection */
+    .footerend div p{
+        font-size: 0.9em;
+    }
+    .footerend div .flogo{
+        width: 30%;
+    }
+
+
+}
+
+
+
+
